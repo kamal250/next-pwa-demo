@@ -1,48 +1,48 @@
-{
-    "management": {
-        "name": "Management",
-        "resources": {
-            "0": {
-                "name": "Jinal Shah",
-                "designation": "Managing Director"
-            },
-            "1": {
-                "name": "Viral Doshi",
-                "designation": "Vice President"
-            }
-        }
-    },
-    "project_managers": {
-        "name": "Project Managers",
-        "resources": {
-            "0": {
-                "name": "Gaurang Jadav",
-                "designation": "Project Manager"
-            },
-            "1": {
-                "name": "Karishma Soni",
-                "designation": "Project Manager"
-            },
-            "2": {
-                "name": "Hemang Shah",
-                "designation": "Project Manager(UI/UX)"
-            },
-            "3": {
-                "name": "Kamal Joshi",
-                "designation": "Technical Manager"
-            },
-            "4": {
-                "name": "Chintan Fadia",
-                "designation": "Project Manager"
-            },
-            "5": {
-                "name": "Lopamudra Das",
-                "designation": "Project Manager"
-            },
-            "6": {
-                "name": "Sagar Jain",
-                "designation": "Project Manager"
-            }
-        }
-    }
-}
+[
+  {
+    "name": "Management",
+    "resources": [
+      {
+        "name": "Jinal Shah",
+        "designation": "Managing Director"
+      },
+      {
+        "name": "Viral Doshi",
+        "designation": "Vice President"
+      }
+    ]
+  },
+  {
+    "name": "Project Managers",
+    "resources": [
+      {
+        "name": "Gaurang Jadav",
+        "designation": "Project Manager"
+      },
+      {
+        "name": "Karishma Soni",
+        "designation": "Project Manager"
+      },
+      {
+        "name": "Hemang Shah",
+        "designation": "Project Manager(UI/UX)"
+      },
+      {
+        "name": "Kamal Joshi",
+        "designation": "Technical Manager"
+      },
+      {
+        "name": "Chintan Fadia",
+        "designation": "Project Manager"
+      },
+      {
+        "name": "Lopamudra Das",
+        "designation": "Project Manager"
+      },
+      {
+        "name": "Sagar Jain",
+        "designation": "Project Manager"
+      }
+    ]
+  }
+]

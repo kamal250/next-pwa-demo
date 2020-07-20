@@ -1,42 +1,40 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from "react";
+import Link from "next/link";
+import Head from "next/head";
+import Nav from "../components/nav";
+import data from "../static/data.json";
+import convertToSlug from "../helper/url";
 
 const Home = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>NextJS PWA Demo - List</title>
     </Head>
 
     <Nav />
 
-    <div className='hero'>
-      <h1 className='title'>Welcome to Next.js!</h1>
-      <p className='description'>
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
+    <div className="hero">
+      <h1 className="title">Welcome to Next.js PWA Demo!</h1>
 
-      <div className='row'>
-        <Link href='https://github.com/zeit/next.js#setup'>
-          <a className='card'>
-            <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next.js on GitHub and in their examples.</p>
-          </a>
-        </Link>
-        <Link href='https://github.com/zeit/next.js/tree/master/examples'>
-          <a className='card'>
-            <h3>Examples &rarr;</h3>
-            <p>Find other example boilerplates on the Next.js GitHub.</p>
-          </a>
-        </Link>
-        <Link href='https://github.com/zeit/next.js'>
-          <a className='card'>
-            <h3>Create Next App &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it!</p>
-          </a>
-        </Link>
-      </div>
+      <ul className="row">
+        {data.map((resourceGroup) => {
+          return (
+            <li key={resourceGroup.name}>
+              <h2>{resourceGroup.name}</h2>
+              {resourceGroup.resources.map((resource) => {
+                return (
+                  <Link key={resource.name} href={convertToSlug(resource.name)}>
+                    <a className="card">
+                      <h3>{resource.name}</h3>
+                      <p>{resource.designation}</p>
+                    </a>
+                  </Link>
+                );
+              })}
+            </li>
+          );
+        })}
+      </ul>
     </div>
 
     <style jsx>{`
@@ -62,13 +60,15 @@ const Home = () => (
         flex-direction: row;
         justify-content: space-around;
       }
+      .row li {
+        list-style: none;
+      }
       .card {
         padding: 18px 18px 24px;
         width: 220px;
         text-align: left;
         text-decoration: none;
         color: #434343;
-        border: 1px solid #9b9b9b;
       }
       .card:hover {
         border-color: #067df7;
@@ -86,6 +86,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
