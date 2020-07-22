@@ -5,6 +5,10 @@ import Nav from "../components/nav";
 import data from "../static/data.json";
 import convertToSlug from "../helper/url";
 
+const setResource = (resource) => {
+  localStorage.setItem('resource', JSON.stringify(resource));
+}
+
 const Home = () => (
   <div>
     <Head>
@@ -23,8 +27,17 @@ const Home = () => (
               <h2>{resourceGroup.name}</h2>
               {resourceGroup.resources.map((resource) => {
                 return (
-                  <Link key={resource.name} href={convertToSlug(resource.name)}>
-                    <a className="card">
+                  <Link
+                    key={resource.name}
+                    href={{
+                      pathname: "/resource",
+                      query: {
+                        name: `${convertToSlug(resource.name)}`,
+                        group: `${resourceGroup.name}`
+                      },
+                    }}                    
+                  >
+                    <a className="card" onClick={() => setResource(resource)}>
                       <h3>{resource.name}</h3>
                       <p>{resource.designation}</p>
                     </a>

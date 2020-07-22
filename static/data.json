@@ -4,11 +4,13 @@
     "resources": [
       {
         "name": "Jinal Shah",
-        "designation": "Managing Director"
+        "designation": "Managing Director",
+        "picture": "https://www.iflair.com/wp-content/uploads/2019/12/jinal-shah.jpg"
       },
       {
         "name": "Viral Doshi",
-        "designation": "Vice President"
+        "designation": "Vice President",
+        "picture": "https://www.iflair.com/wp-content/uploads/2019/12/viral-doshi.jpg"
       }
     ]
   },
@@ -17,31 +19,38 @@
     "resources": [
       {
         "name": "Gaurang Jadav",
-        "designation": "Project Manager"
+        "designation": "Project Manager",
+        "picture": "https://www.iflair.com/wp-content/uploads/2019/12/gaurang-jadav.jpg"
       },
       {
         "name": "Karishma Soni",
-        "designation": "Project Manager"
+        "designation": "Project Manager",
+        "picture": "https://www.iflair.com/wp-content/uploads/2019/12/karsihma-soni.jpg"
       },
       {
         "name": "Hemang Shah",
-        "designation": "Project Manager(UI/UX)"
+        "designation": "Project Manager(UI/UX)",
+        "picture": "https://www.iflair.com/wp-content/uploads/2019/12/hemang-shah.jpg"
       },
       {
         "name": "Kamal Joshi",
-        "designation": "Technical Manager"
+        "designation": "Technical Manager",
+        "picture": "https://www.iflair.com/wp-content/uploads/2019/12/kamal-joshi.jpg"
       },
       {
         "name": "Chintan Fadia",
-        "designation": "Project Manager"
+        "designation": "Project Manager",
+        "picture": "https://www.iflair.com/wp-content/uploads/2019/12/chintan-fadiya.jpg"
       },
       {
         "name": "Lopamudra Das",
-        "designation": "Project Manager"
+        "designation": "Project Manager",
+        "picture": "https://www.iflair.com/wp-content/uploads/2019/12/Lopamudra-Das.jpg"
       },
       {
         "name": "Sagar Jain",
-        "designation": "Project Manager"
+        "designation": "Project Manager",
+        "picture": "https://www.iflair.com/wp-content/uploads/2019/12/Sagar-Jain.jpg"
       }
     ]
   }
