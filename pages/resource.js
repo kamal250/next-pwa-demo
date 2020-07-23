@@ -1,7 +1,7 @@
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
 import Nav from "../components/nav";
+import Header from "../components/header";
 import { useRouter } from "next/router";
 
 const RenderResource = (props) => {
@@ -29,10 +29,7 @@ const Resource = () => {
   const resource = (typeof window !== 'undefined' && window && localStorage)?JSON.parse(localStorage.getItem("resource")):{} || {};
   return (
     <div>
-      <Head>
-        <title>NextJS PWA Demo - {resourceName}</title>
-      </Head>
-
+      <Header />
       <Nav />
 
       { resource && resourceName === resource.name ? <RenderResource resource={resource} /> : ""}

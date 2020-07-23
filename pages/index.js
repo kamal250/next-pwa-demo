@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
 import Nav from "../components/nav";
+import Header from "../components/header";
 import data from "../static/data.json";
 import convertToSlug from "../helper/url";
 
@@ -11,10 +11,7 @@ const setResource = (resource) => {
 
 const Home = () => (
   <div>
-    <Head>
-      <title>NextJS PWA Demo - List</title>
-    </Head>
-
+    <Header />
     <Nav />
 
     <div className="hero">
