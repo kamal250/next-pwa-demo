@@ -14,3 +14,14 @@ Execute the following commands and check output at [http://localhost:5000](http:
 npm install
 npm run dev
 ```
+
+## Steps to build:
+1. Create a responsivewebapp in nextjs
+2. Install [next-pwa](https://npmjs.com/package/next-pwa)
+3. Configure `next.config.js`
+4. Add manifest.json using [manifest](https://app-manifest.firebaseapp.com) - Set `display` other than `browser` & `prefer_related_applications` to `false`
+5. Add meta tags in header
+
+## How to verify whether it is PWA or not:
+1. Check within Lighthouse (Google Chrome) about PWA
+2. Installable icon on address bar on Desktop or "Add to Home" prompt on Mobile (if `manifest.json` is appropriate)
