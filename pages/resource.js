@@ -26,7 +26,7 @@ const Resource = () => {
   const resourceName = name
     ? name.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
     : "";
-  const resource = JSON.parse(localStorage.getItem("resource")) || {};
+  const resource = (typeof window !== 'undefined' && window && localStorage)?JSON.parse(localStorage.getItem("resource")):{} || {};
   return (
     <div>
       <Head>
